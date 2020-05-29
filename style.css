@@ -116,9 +116,16 @@ img {
     transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
+.tablinks-p:hover {
+    background-color: purple;
+}
+
+.tablinks-g:hover {
+    background-color: gold;
+}
+
+.tablinks-o:hover {
+    background-color: skyblue;
 }
 
 /* Create an active/current tablink class */
