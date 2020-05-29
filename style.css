@@ -118,21 +118,21 @@ img {
     transition: 0.3s;
 }
 
-.tablinks-p:hover {
+.tab-purple:hover {
     background-color: purple;
 }
 
-.tablinks-g:hover {
+.tab-gold:hover {
     background-color: gold;
 }
 
-.tablinks-o:hover {
+.tab-open-o:hover {
     background-color: skyblue;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: red;
 }
 
 /* Style the tab content */

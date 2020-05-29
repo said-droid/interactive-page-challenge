@@ -42,7 +42,7 @@ function openTabs(e, roomNumber) {
     for (i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
     }
-    tabLinks = document.getElementsByClassName('tablinks-p tablinks-g tablinks-o');
+    tabLinks = document.getElementsByClassName('tablinks');
     for (i = 0; i < tabLinks.length; i++) {
         tabLinks[i].className = tabLinks[i].className.replace(" active", "");
     }
