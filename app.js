@@ -77,20 +77,3 @@ const step = ts => {
 
 requestAnimationFrame(step);
 
-// number of visitors
-function random(min, max)
-{
-    return Math.floor(Math.random() * (max-min+1) + min);
-}
-
-var initial = random(500, 2000);
-var count = initial;
-document.getElementById('visitors');
-
-setInterval(function() {
-    var variation = random(-5,5);
-
-    count += variation
-    console.log('You currently have ' + count + ' visitors')
-
-}, 2000)
