@@ -14,17 +14,17 @@
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-        <img src="room1.jpg" style="width:100%">
+        <img src="room1.jpg">
         <div class="text">The Purple Room</div>
     </div>
 
     <div class="mySlides fade">
-        <img src="room2.jpg" style="width:100%">
+        <img src="room2.jpg">
         <div class="text">The Golden Room</div>
     </div>
 
     <div class="mySlides fade">
-        <img src="room3.jpg" style="width:100%">
+        <img src="room3.jpg">
         <div class="text">The Open Room</div>
     </div>
 
@@ -40,6 +40,36 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
 </div>
+
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">The Purple Room</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">The Golden Room</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">The Open Room</button>
+</div>
+
+<!-- Tab content -->
+<div id="purple" class="tabcontent">
+    <h3>The purple Room</h3>
+    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+        vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+        cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+
+<div id="gold" class="tabcontent">
+    <h3>The Golden Room</h3>
+    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+        vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+        cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+
+<div id="open" class="tabcontent">
+    <h3>The Open Room</h3>
+    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+        vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+        cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+
 <script src="app.js"></script>
 </body>
 </html>
