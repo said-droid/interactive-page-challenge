@@ -51,3 +51,46 @@ function openTabs(e, roomNumber) {
 }
 
 document.getElementById('defaultOpen').click();
+
+/****************
+ * Counting visitors
+ * **************/
+
+let start;
+const elementNeeded = document.getElementById('count');
+const final = parseInt(elementNeeded.textContent, 10); // parse out the final number
+const duration = 100000;
+
+const step = ts => {
+    if (!start) {
+        start = ts;
+    }
+
+    // get the time passed as a fraction of total duration
+    let progress = (ts - start) / duration
+
+    elementNeeded.textContent = Math.floor(progress * final) // set the text
+    if (progress < 1) {
+        requestAnimationFrame(step)
+    }
+}
+
+requestAnimationFrame(step);
+
+// number of visitors
+function random(min, max)
+{
+    return Math.floor(Math.random() * (max-min+1) + min);
+}
+
+var initial = random(500, 2000);
+var count = initial;
+document.getElementById('visitors');
+
+setInterval(function() {
+    var variation = random(-5,5);
+
+    count += variation
+    console.log('You currently have ' + count + ' visitors')
+
+}, 2000)
