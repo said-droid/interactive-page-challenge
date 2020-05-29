@@ -34,7 +34,7 @@ function carousel(element) {
  * Tabs
  * **************/
 
-function openTabs(event, roomNumber) {
+function openTabs(e, roomNumber) {
     let i, tabContent, tabLinks;
 
     tabContent = document.getElementsByClassName('tabContent');
@@ -42,11 +42,12 @@ function openTabs(event, roomNumber) {
     for (i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
     }
-    tabLinks = document.getElementsByClassName('tablinks');
+    tabLinks = document.getElementsByClassName('tablinks-p tablinks-g tablinks-o');
     for (i = 0; i < tabLinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
     }
     document.getElementById(roomNumber).style.display = 'block';
     event.currentTarget.className += ' active';
-
 }
+
+document.getElementById('defaultOpen').click();
