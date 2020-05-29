@@ -47,7 +47,7 @@ function openTabs(e, roomNumber) {
         tabLinks[i].className = tabLinks[i].className.replace(" active", "");
     }
     document.getElementById(roomNumber).style.display = 'block';
-    event.currentTarget.className += ' active';
+    e.currentTarget.className += ' active';
 }
 
 document.getElementById('defaultOpen').click();
