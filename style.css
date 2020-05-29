@@ -142,3 +142,12 @@ img {
     border: 1px solid #ccc;
     border-top: none;
 }
+
+@media screen and(max-width: 800px) {
+    .tab {display: grid;
+    grid-template-columns: auto auto auto !important;
+}
+    .tab button {
+        display: inline-grid;
+    }
+}
